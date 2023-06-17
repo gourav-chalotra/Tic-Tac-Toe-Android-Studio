@@ -17,7 +17,6 @@ Button start ,exit ,aboutDeveloper;
         setContentView(R.layout.activity_logo_slashing);
 
         start = findViewById(R.id.startBtn);
-        aboutDeveloper = (Button)findViewById(R.id.developerIdBtn);
         exit = (Button) findViewById(R.id.exitBtn);
 
         start.setOnClickListener(new View.OnClickListener() {
@@ -31,13 +30,6 @@ Button start ,exit ,aboutDeveloper;
             public void onClick(View view) {
                 finish();
                 System.exit(0);
-            }
-        });
-
-        aboutDeveloper.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(LogoSlashing.this,aboutdeveloper.class));
             }
         });
     }
